@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,235 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+html{
+	scroll-behavior: smooth;
+	background-color:#333;
+	color:white;
+	font-family: 'Roboto', sans-serif;
+	border-color: white;
+}
+
+.darklight{
+	background-color: #fff;
+	color: #333;
+	border-color: #333;
+}
+
+h1{
+	font-size: x-large;
+	font-weight: bold;
+}
+
+body{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#info{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	display: flexbox;
+}
+
+table, td{
+	border: 1px solid;
+}
+table{
+	border-radius: 0.4em;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+caption{
+	font-size: x-large;
+	font-weight: bold;
+	text-align: left;
+	padding: 0.5em;
+	padding-top: 3em;
+}
+td{
+	height: 6em;
+}
+td.name{
+	font-size: large;
+	font-weight: bold;
+	width: 25%;
+	text-align: center;
+	margin: auto;
+}
+td.name img{
+	width: 1em;
+	padding-top: 1em;
+	animation: shrink 0.5s;
+}
+td.name:hover img{
+	animation: grow 0.5s;
+	width: 3em;
+}
+td.desc{
+	font-size: medium;
+	text-align: left;
+	vertical-align: top;
+	padding: 1em;
+}
+
+@keyframes grow{
+	from {width: 1em;}
+	to {width: 3em;}
+}
+
+@keyframes shrink{
+	from {width: 3em;}
+	to {width: 1em;}
+}
+
+#main-block{
+	float:right;
+	padding-top: 4em;
+	box-sizing:border-box;
+	width: 45%;
+	max-width: 100%;
+}
+
+#sidebar{
+	float:left;
+	width:45%;
+	max-width: 100%;
+	padding-top: 4em;
+	box-sizing:border-box;
+}
+
+#aboutme{
+	padding: 1em;
+	border: 1px solid;
+	border-radius: 0.4em;
+	min-height: 15em;
+}
+
+#skills{
+	padding:1em;
+	border: 1px solid;
+	border-radius: 0.4em;
+	min-height: 15em;
+}
+#skills li{
+	border: 1px solid;
+	border-radius: 4em;
+	padding: 0.5em;
+	margin: 0.25em;
+	display: inline-block;
+	list-style: none;
+}
+#skills li:hover{
+	color: aquamarine;
+	border-color: aquamarine;
+	background-color: #555;
+}
+#skills img{
+	height: 0.75em;
+}
+
+#main-navbar{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) repeat(4, 3fr);
+	justify-items: center;
+	font-size: medium;
+	background: darkslateblue;
+	border-top: 1px solid;
+	border-radius: 0em 0em 1em 1em;
+	position: sticky;
+	top: 0px;
+}
+#main-navbar a{
+	font-weight: bold;
+	font-size: large;
+	color: #acf;
+	display: block;
+	padding: 1em 0.5em;
+}
+#main-navbar a:hover{
+	color: #dff;
+}
+#main-navbar img{
+	height: 1em;
+	min-width: 0.8em;
+}
+
+a{
+	text-decoration:none;
+	color:#6699c3;
+}
+a:hover{
+	color:#88bbe5;
+}
+
+.clr{
+	clear:both;
+}
+
+.title-box{
+	text-align: center;
+	width:100%;
+	font-size: medium;
+
+	background-color:darkslateblue;
+	border-radius: 1em 1em 0em 0em;
+	padding: 0.5em 0em;
+	margin-top: 1em;
+}
+.title-box h1{
+	font-size: 3em;
+	font-weight: 700;
+}
+
+input{
+	padding: 0.5em;
+	margin: 0;
+	font-size: 1em;
+	border: #333 solid 1px;
+}
+
+.input-align{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0.25em;
+}
+
+textarea{
+	resize: none;
+	padding: 0.5em;
+	margin: 0;
+	font-size: 1em;
+	font-family: 'Roboto', sans-serif;
+	border: #333 solid 1px;
+	grid-column: 1 / 3;
+}
+
+fieldset{
+	width: 10vw;
+	border: 1px solid;
+	border-radius: 0.4em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#contact{
+	padding-top: 3em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#submit{
+	padding: 0.5em 1em;
+	width: fit-content;
+	font-size: 1em;
+	grid-column: 1;
+}
+
+ul{
+	padding-left: 0em;
 }

@@ -1,4 +1,3 @@
-import profile from './profile.jpg';
 import './App.css';
 import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
@@ -25,7 +24,7 @@ function AboutMe({ login }) {
     return (
       <section>
         <h1>About Me</h1>
-        <img src={profile} alt='Profile' width={100} />
+        {/* <img src={profile} alt='Profile' width={100} /> */}
         <p>{data.name}</p>
         <p>{data.public_repos} public repos</p>
         <p>Created on {data.created_at}</p>
@@ -35,7 +34,7 @@ function AboutMe({ login }) {
     return (
       <section>
         <h1>About Me</h1>
-        <img src={profile} alt='Profile' width={100} />
+        {/* <img src={profile} alt='Profile' width={100} /> */}
         <p>Placeholder text</p>
       </section>
     );
@@ -62,7 +61,7 @@ function SecretAccess() {
 
 function ContactMe(props) {
   function clearInput() {
-    props.setName('');
+    props.setInput('');
   }
 
   return (
@@ -73,7 +72,7 @@ function ContactMe(props) {
         <button onClick={clearInput}>Submit</button>
       </form>
 
-      <p>&copy; {props.year}, {props.name}'s Website</p>
+      <p>&copy; {props.year}, David's Website</p>
     </footer>
   );
 }
@@ -81,7 +80,7 @@ function ContactMe(props) {
 const skills = ['HTML', 'CSS', 'JavaScript', 'React'];
 
 function App() {
-  const [name, setName] = useState('');
+  const [input, setInput] = useState('');
 
   return (
     <div className='App'>
@@ -89,12 +88,12 @@ function App() {
       <AboutMe login="david-strupinski" />
       <Skills skills={skills} />
       {name === 'David' ? <SecretAccess /> : null}
-      <Contact year={new Date().getFullYear()} name={name} setName={setName} /> */}
+      <Contact year={new Date().getFullYear()} setInput={setInput} /> */}
 
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/skillsandprojects' element={<SkillsAndProjects />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/contact' element={<Contact year={new Date().getFullYear()} setInput={setInput} />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
     </div>
