@@ -9,7 +9,7 @@ ReactDOM.render(
   <Router>
     <App />
   </Router>,
-  document.getElementById('root')
+  document.getElementById('title')
 );
 
 // If you want to start measuring performance in your app, pass a function
