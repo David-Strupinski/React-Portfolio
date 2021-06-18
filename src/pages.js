@@ -14,9 +14,9 @@ export function Home() {
                 <Link to='contact'>Contact Me</Link>
             </nav>
             <div id='aboutme'>
-                <h1>About Me</h1>
+                <h2>About Me</h2>
                 <div>
-                    <img src='images/profile.jpg' alt='Profile Picture' />
+                    <img src='images/profile.jpg' alt='Profile Picture' style={{ height: '100px' }} />
                     <p>
                         I'm from Tacoma, Washington and a current freshman at the
                         University of Washington in Seattle. I currently have a 3.90
@@ -32,7 +32,7 @@ export function Skills() {
     return (
         <>
             <div id='skills'>
-                <h1>Skills</h1>
+                <h2>Skills</h2>
                 <ul>
                     <li>HTML <img src='images/green dot.png' alt='Green Dot' /></li>
                     <li>CSS <img src='images/green dot.png' alt='Green Dot' /></li>
