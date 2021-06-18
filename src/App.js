@@ -34,32 +34,6 @@ function AboutMe({ login }) {
   }
 }
 
-function SecretAccess() {
-  return (
-    <h3>Welcome, David.</h3>
-  )
-}
-
-
-
-function ContactMe(props) {
-  function clearInput() {
-    props.setInput('');
-  }
-
-  return (
-    <footer>
-      <h1>Contact</h1>
-      <form>
-        <input type='name' placeholder='Name' value={props.name} onChange={n => props.setName(n.target.value)} />
-        <button onClick={clearInput}>Submit</button>
-      </form>
-
-      <p>&copy; {props.year}, David's Website</p>
-    </footer>
-  );
-}
-
 const skills = ['HTML', 'CSS', 'JavaScript', 'React'];
 
 function App() {
