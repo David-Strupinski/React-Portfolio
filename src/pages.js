@@ -30,56 +30,60 @@ export function Home() {
 
 export function Skills() {
     return (
-        <div id='skills'>
-            <h1>Skills</h1>
-            <ul>
-                <li>HTML <img src='images/green dot.png' alt='Green Dot' /></li>
-                <li>CSS <img src='images/green dot.png' alt='Green Dot' /></li>
-                <li>JavaScript <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                <li>jQuery <img src='images/red dot.png' alt='Red Dot' /></li>
-                <li>React.js <img src='images/red dot.png' alt='Red Dot' /></li>
-                <li>React Native <img src='images/red dot.png' alt='Red Dot' /></li>
-                <li>Python <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                <li>Java <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                <li>R <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                <li>Spanish <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                <li>Microsoft Office Suite <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                <li>Google Search <img src='images/green dot.png' alt='Green Dot' /></li>
-            </ul>
-        </div>
+        <>
+            <div id='skills'>
+                <h1>Skills</h1>
+                <ul>
+                    <li>HTML <img src='images/green dot.png' alt='Green Dot' /></li>
+                    <li>CSS <img src='images/green dot.png' alt='Green Dot' /></li>
+                    <li>JavaScript <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
+                    <li>jQuery <img src='images/red dot.png' alt='Red Dot' /></li>
+                    <li>React.js <img src='images/red dot.png' alt='Red Dot' /></li>
+                    <li>React Native <img src='images/red dot.png' alt='Red Dot' /></li>
+                    <li>Python <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
+                    <li>Java <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
+                    <li>R <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
+                    <li>Spanish <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
+                    <li>Microsoft Office Suite <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
+                    <li>Google Search <img src='images/green dot.png' alt='Green Dot' /></li>
+                </ul>
+            </div>
+        </>
     )
 }
 
 export function Projects() {
     return (
-        <table id='projects'>
-            <caption>Projects</caption>
-            <tr>
-                <td class='name' id='porfolio'>Portfolio Website <br /><img src='images/portfolio.png' alt='Portfolio Site' />
-                </td>
-                <td class='desc'>I retaught myself web programming using the University of Washington library resources
-                    and learned jQuery and React.js as well to improve this site. I made this website on my own and from
-                    scratch applying what I learned.
-                </td>
-            </tr>
-            <tr>
-                <td class='name' id='spotify'>Spotify Assistant <br /><img src='images/spotify.png' alt='Spotify Assistant' />
-                </td>
-                <td class='desc'>Have you ever used Spotify and wished you could skip the ads without paying for premium?
-                    This small program can do just that by tracking Spotify's PID and restarting it in a minimized form when
-                    an ad is detected, then automatically resumes playing the music you love! (Note: Windows only;
-                    deprecated from updates so the minimize function does not work properly anymore)
-                </td>
-            </tr>
-            <tr>
-                <td class='name' id='grading'>Grading Helper <br /><img src='images/apple.png' alt='Apple' /></td>
-                <td class='desc'>Near the end of the year in my AP Computer Science class in high school, a classmate and I
-                    created a mobile application for both iOS and Android that allowed teachers to quickly grade a mass
-                    amount of papers by calculating percentages and scores for an entire assignment. The result was
-                    outputted in a list format to allow for all possibilities to be seen at once.
-                </td>
-            </tr>
-        </table>
+        <>
+            <table id='projects'>
+                <caption>Projects</caption>
+                <tr>
+                    <td class='name' id='porfolio'>Portfolio Website <br /><img src='images/portfolio.png' alt='Portfolio Site' />
+                    </td>
+                    <td class='desc'>I retaught myself web programming using the University of Washington library resources
+                        and learned jQuery and React.js as well to improve this site. I made this website on my own and from
+                        scratch applying what I learned.
+                    </td>
+                </tr>
+                <tr>
+                    <td class='name' id='spotify'>Spotify Assistant <br /><img src='images/spotify.png' alt='Spotify Assistant' />
+                    </td>
+                    <td class='desc'>Have you ever used Spotify and wished you could skip the ads without paying for premium?
+                        This small program can do just that by tracking Spotify's PID and restarting it in a minimized form when
+                        an ad is detected, then automatically resumes playing the music you love! (Note: Windows only;
+                        deprecated from updates so the minimize function does not work properly anymore)
+                    </td>
+                </tr>
+                <tr>
+                    <td class='name' id='grading'>Grading Helper <br /><img src='images/apple.png' alt='Apple' /></td>
+                    <td class='desc'>Near the end of the year in my AP Computer Science class in high school, a classmate and I
+                        created a mobile application for both iOS and Android that allowed teachers to quickly grade a mass
+                        amount of papers by calculating percentages and scores for an entire assignment. The result was
+                        outputted in a list format to allow for all possibilities to be seen at once.
+                    </td>
+                </tr>
+            </table>
+        </>
     )
 }
 
