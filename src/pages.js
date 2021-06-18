@@ -3,24 +3,36 @@ import { Link, useLocation } from 'react-router-dom';
 
 export function Home() {
     return (
-        <div>
-            <h1>Portfolio Website</h1>
-            <nav>
-                <Link to='skillsandprojects'>Skills and Projects</Link>
+        <>
+            <div>
+                <h1>Portfolio Website</h1>
+                <small>By David Strupinski</small>
+            </div>
+            <nav id="main-navbar">
+                <Link to='skills'>Skills</Link>
+                <Link to='projects'>Projects</Link>
                 <Link to='contact'>Contact Me</Link>
             </nav>
-            <html src='../public/index.html'></html>
-        </div>
+        </>
     )
 }
 
-export function SkillsAndProjects() {
+export function Skills() {
     return (
-        <div>
-            <h1>Skills and Projects</h1>
-        </div>
+        <>
+            <h1>Skills</h1>
+        </>
     )
 }
+
+export function Projects() {
+    return (
+        <>
+            <h1>Projects</h1>
+        </>
+    )
+}
+
 
 export function Contact(props) {
     function clearInput() {

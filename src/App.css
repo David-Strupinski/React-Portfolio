@@ -171,7 +171,7 @@ td.desc{
 
 #main-navbar{
 	display: grid;
-	grid-template-columns: repeat(3, 1fr) repeat(4, 3fr);
+	grid-template-columns: repeat(3, 1fr);
 	justify-items: center;
 	font-size: medium;
 	background: darkslateblue;

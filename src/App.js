@@ -1,15 +1,8 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Home, SkillsAndProjects, Contact, PageNotFound } from './pages';
+import { Home, Skills, Projects, Contact, PageNotFound } from './pages';
 
-function Title(props) {
-  return (
-    <header>
-      <h1>{props.title}</h1>
-    </header>
-  );
-}
 
 function AboutMe({ login }) {
   const [data, setData] = useState(null);
@@ -39,16 +32,6 @@ function AboutMe({ login }) {
       </section>
     );
   }
-}
-
-function Skills(props) {
-  return (
-    <section>
-      <ul>
-        {props.skills.map((skill, i) => <li key={i}>{skill}</li>)}
-      </ul>
-    </section>
-  );
 }
 
 function SecretAccess() {
@@ -84,15 +67,10 @@ function App() {
 
   return (
     <div className='App'>
-      {/* <Title title='David Strupinski' />
-      <AboutMe login="david-strupinski" />
-      <Skills skills={skills} />
-      {name === 'David' ? <SecretAccess /> : null}
-      <Contact year={new Date().getFullYear()} setInput={setInput} /> */}
-
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/skillsandprojects' element={<SkillsAndProjects />} />
+        <Route path='/skills' element={<Skills />} />
+        <Route path='/projects' element={<Projects />} />
         <Route path='/contact' element={<Contact year={new Date().getFullYear()} setInput={setInput} />} />
         <Route path='*' element={<PageNotFound />} />
       </Routes>
