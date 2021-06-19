@@ -179,6 +179,7 @@ td.desc{
 	border-radius: 0em 0em 1em 1em;
 	position: sticky;
 	top: 0px;
+	margin-bottom: 1em;
 }
 #main-navbar a{
 	font-weight: bold;

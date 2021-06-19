@@ -34,7 +34,16 @@ function AboutMe({ login }) {
   }
 }
 
-const skills = ['HTML', 'CSS', 'JavaScript', 'React'];
+function dot(color) {
+  return (
+    <img src={`images/${color} dot.png`} alt={`${color} Dot`} />
+  )
+}
+
+const skills = [['HTML', dot('green')], ['CSS', dot('green')], ['JavaScript', dot('yellow')],
+['React', dot('yellow')], ['jQuery', dot('red')], ['React Native', dot('red')],
+['Python', dot('yellow')], ['Java', dot('yellow')], ['R', dot('yellow')], ['Spanish', dot('yellow')],
+['Microsoft Office', dot('green')]];
 
 function App() {
   const [input, setInput] = useState('');
@@ -43,7 +52,7 @@ function App() {
     <div className='App'>
       <Routes>
         <Route path='/' element={<Home />} />
-        <Route path='/skills' element={<Skills />} />
+        <Route path='/skills' element={<Skills skills={skills} />} />
         <Route path='/projects' element={<Projects />} />
         <Route path='/contact' element={<Contact year={new Date().getFullYear()} setInput={setInput} />} />
         <Route path='*' element={<PageNotFound />} />

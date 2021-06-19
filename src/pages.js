@@ -21,26 +21,20 @@ export function Home() {
     )
 }
 
-export function Skills() {
+export function Skills(props) {
+    const skillList = props.skills.map((skill) => {
+        return (
+            <li>{skill[0]} {skill[1]}</li>
+        )
+    })
+
     return (
         <>
             {Title('Skills')}
             {Navigation()}
             <div id='skills'>
-                <h2>Skills</h2>
-                <ul>
-                    <li>HTML <img src='images/green dot.png' alt='Green Dot' /></li>
-                    <li>CSS <img src='images/green dot.png' alt='Green Dot' /></li>
-                    <li>JavaScript <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                    <li>jQuery <img src='images/red dot.png' alt='Red Dot' /></li>
-                    <li>React.js <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                    <li>React Native <img src='images/red dot.png' alt='Red Dot' /></li>
-                    <li>Python <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                    <li>Java <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                    <li>R <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                    <li>Spanish <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                    <li>Microsoft Office Suite <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                </ul>
+                {/* <h2>Skills</h2> */}
+                <ul>{skillList}</ul>
             </div>
         </>
     )
@@ -52,7 +46,7 @@ export function Projects() {
             {Title('Projects')}
             {Navigation()}
             <table id='projects'>
-                <caption>Projects</caption>
+                {/* <caption>Projects</caption> */}
                 <tr>
                     <td class='name' id='porfolio'>Portfolio Website <br /><img src='images/portfolio.png' alt='Portfolio Site' />
                     </td>
@@ -95,7 +89,7 @@ export function Contact(props) {
             {Navigation()}
             <form id='contact'>
                 <fieldset>
-                    <h1>Contact</h1>
+                    {/* <h1>Contact</h1> */}
                     <p>
                         Have a message for me? Or <a href='mailto:david.strupinski@gmail.com'>Email Directly</a>
                     </p>
