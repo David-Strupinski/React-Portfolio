@@ -33,14 +33,13 @@ export function Skills() {
                     <li>CSS <img src='images/green dot.png' alt='Green Dot' /></li>
                     <li>JavaScript <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
                     <li>jQuery <img src='images/red dot.png' alt='Red Dot' /></li>
-                    <li>React.js <img src='images/red dot.png' alt='Red Dot' /></li>
+                    <li>React.js <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
                     <li>React Native <img src='images/red dot.png' alt='Red Dot' /></li>
                     <li>Python <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
                     <li>Java <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
                     <li>R <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
                     <li>Spanish <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
                     <li>Microsoft Office Suite <img src='images/yellow dot.png' alt='Yellow Dot' /></li>
-                    <li>Google Search <img src='images/green dot.png' alt='Green Dot' /></li>
                 </ul>
             </div>
         </>
@@ -108,7 +107,6 @@ export function Contact(props) {
                     </div>
                 </fieldset>
             </form>
-            {/* <p>&copy; {new Date().getFullYear()}, David's Website</p> */}
         </>
     )
 }
