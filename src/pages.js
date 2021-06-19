@@ -4,22 +4,15 @@ import { Link, useLocation } from 'react-router-dom';
 export function Home() {
     return (
         <>
-            <div className='title-box'>
-                <h1>Portfolio Website</h1>
-                <small>By David Strupinski</small>
-            </div>
-            <nav id='main-navbar'>
-                <Link to='skills'>Skills</Link>
-                <Link to='projects'>Projects</Link>
-                <Link to='contact'>Contact Me</Link>
-            </nav>
-            <div id='aboutme'>
+            {Title('Portfolio Website')}
+            {Navigation()}
+            <div div id='aboutme'>
                 <h2>About Me</h2>
                 <div>
                     <img src='images/profile.jpg' alt='Profile Picture' style={{ height: '100px' }} />
                     <p>
                         I'm from Tacoma, Washington and a current freshman at the
-                        University of Washington in Seattle. I currently have a 3.90
+                        University of Washington in Seattle. I currently have a 3.89
                         GPA and I am an intended Computer Science major.
                     </p>
                 </div>
@@ -31,6 +24,8 @@ export function Home() {
 export function Skills() {
     return (
         <>
+            {Title('Skills')}
+            {Navigation()}
             <div id='skills'>
                 <h2>Skills</h2>
                 <ul>
@@ -55,6 +50,8 @@ export function Skills() {
 export function Projects() {
     return (
         <>
+            {Title('Projects')}
+            {Navigation()}
             <table id='projects'>
                 <caption>Projects</caption>
                 <tr>
@@ -95,6 +92,8 @@ export function Contact(props) {
 
     return (
         <>
+            {Title('Contact')}
+            {Navigation()}
             <form id='contact'>
                 <fieldset>
                     <h1>Contact</h1>
@@ -118,6 +117,29 @@ export function PageNotFound() {
     let location = useLocation();
 
     return (
-        <h1>404: Page Not Found at {location.pathname}</h1>
+        <>
+            {Navigation()}
+            <h1> 404: Page Not Found at {location.pathname}</h1>
+        </>
+    )
+}
+
+function Navigation() {
+    return (
+        <nav id='main-navbar'>
+            <Link to='/'>Home</Link>
+            <Link to='/skills'>Skills</Link>
+            <Link to='/projects'>Projects</Link>
+            <Link to='/contact'>Contact Me</Link>
+        </nav>
+    )
+}
+
+function Title(name) {
+    return (
+        <div className='title-box'>
+            <h1>{name}</h1>
+            <small>By David Strupinski</small>
+        </div>
     )
 }
