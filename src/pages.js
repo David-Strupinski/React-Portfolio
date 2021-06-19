@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 export function Home() {
     return (
         <>
-            <div>
+            <div className='title-box'>
                 <h1>Portfolio Website</h1>
                 <small>By David Strupinski</small>
             </div>
@@ -109,7 +109,7 @@ export function Contact(props) {
                     </div>
                 </fieldset>
             </form>
-            {/* <p>&copy; {props.year}, David's Website</p> */}
+            {/* <p>&copy; {new Date().getFullYear()}, David's Website</p> */}
         </>
     )
 }
