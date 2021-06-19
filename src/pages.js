@@ -6,7 +6,7 @@ export function Home() {
         <>
             {Title('Portfolio Website')}
             {Navigation()}
-            <div div id='aboutme'>
+            <div id='aboutme'>
                 <h2>About Me</h2>
                 <div>
                     <img src='images/profile.jpg' alt='Profile Picture' style={{ height: '100px' }} />
