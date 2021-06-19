@@ -64,6 +64,10 @@ body{
 	margin-right: auto;
 }
 
+footer{
+	margin-top: 1em;
+}
+
 #info{
 	width: 90%;
 	margin-left: auto;
